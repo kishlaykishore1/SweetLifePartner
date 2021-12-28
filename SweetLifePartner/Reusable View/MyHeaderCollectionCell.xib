@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Century Gothic Gras 700.ttf">
+            <string>CenturyGothic-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyHeaderCollectionCell" id="gTV-IL-0wX" customClass="MyHeaderCollectionCell" customModule="Sweet_Life_Partner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="42"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpb-8k-ckl">
+                        <rect key="frame" x="6" y="0.0" width="134" height="42"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="CenturyGothic-Bold" family="Century Gothic" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hr-wJ-Vpl">
+                        <rect key="frame" x="146" y="6" width="2" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Vgf-Bx-uHv"/>
+                            <constraint firstAttribute="width" constant="2" id="wLc-99-LpR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9Hr-wJ-Vpl" firstAttribute="leading" secondItem="Rpb-8k-ckl" secondAttribute="trailing" constant="6" id="3tE-Nv-8z2"/>
+                <constraint firstItem="9Hr-wJ-Vpl" firstAttribute="centerY" secondItem="Rpb-8k-ckl" secondAttribute="centerY" id="GeO-at-NcV"/>
+                <constraint firstAttribute="bottom" secondItem="Rpb-8k-ckl" secondAttribute="bottom" id="Ti4-Bb-ITv"/>
+                <constraint firstAttribute="trailing" secondItem="9Hr-wJ-Vpl" secondAttribute="trailing" constant="2" id="WyO-6N-rlW"/>
+                <constraint firstItem="Rpb-8k-ckl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xtq-h4-MMb"/>
+                <constraint firstItem="Rpb-8k-ckl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="xsv-Oq-Cra"/>
+            </constraints>
+            <size key="customSize" width="152" height="42"/>
+            <connections>
+                <outlet property="lblHeaderCell" destination="Rpb-8k-ckl" id="lXX-K8-54z"/>
+                <outlet property="sideView" destination="9Hr-wJ-Vpl" id="ebN-ao-2cr"/>
+            </connections>
+            <point key="canvasLocation" x="56.521739130434788" y="75.669642857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>
